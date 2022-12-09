@@ -9,12 +9,12 @@
 //    
 console.log("Script file")
 
-var age=10;//initialization and assignation
+// var age=10;//initialization and assignation
 let userName="Mike";
 let taxes=11.5;
 const URL="https://google.com";
 
-console.log(age, userName, taxes);//Displaying in the console
+// console.log(age, userName, taxes);//Displaying in the console
 
 userName="Edward";//changing the username value
 taxes=12;//changing taxes value
@@ -35,4 +35,6 @@ document.write(`
 <p>You will be a ${jobTitle} </p>
 <p>in ${geoLocation}, and married to ${partnerName} </p> 
 <p>with ${numChildren} kids.</p>`)
+
+
 
