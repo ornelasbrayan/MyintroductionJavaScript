@@ -22,51 +22,75 @@
 // creating function 
 
 // function declaration 
-function greeting(){
-    console.log("Hello world");
-    // alert("Hello world");
-    // document.write("Hello world");
-    return "Brayan";
-}
-//globar variable
-let global;
-function sum(a,b){
-    //local variable
-    global="affected"; 
-    return a+b;
-}
+// function greeting(){
+//     console.log("Hello world");
+//     // alert("Hello world");
+//     // document.write("Hello world");
+//     return "Brayan";
+// }
+// //globar variable
+// let global;
+// function sum(a,b){
+//     //local variable
+//     global="affected"; 
+//     return a+b;
+// }
 
-console.log(sum(10,50));
-console.log(global);
+// console.log(sum(10,50));
+// console.log(global);
 
-// function expression 
-let displayValues= function(){
-    console.log("Display values....");
-}
-displayValues();
+// // function expression 
+// let displayValues= function(){
+//     console.log("Display values....");
+// }
+// displayValues();
 
-// arrow functions 
+// // arrow functions 
 
-let traveling = country => "Traveling to ... " + country;
+// let traveling = country => "Traveling to ... " + country;
 
-travel = traveling("Italy");
+// travel = traveling("Italy");
 
-console.log(travel);
+// console.log(travel);
 
+// let total=0;
+
+// function addCart(price){
+//     total=total+price;
+//     console.log(total);
+//     return total;
+
+// }
+
+// function calculateTaxes(){
+//     subtotal=addCart(2);
+//     let totalTax= subtotal*1.11;
+//     document.getElementById("receipt").innerHTML=
+//     `<p>Subtotal= ${subtotal}</p>
+//     <p>Total= ${totalTax}</p>`;
+// }
+
+let productsName= prompt("Enter Produt's Name");
+let price= prompt("Enter price");
+let qty= prompt("Enter quantity");
+
+console.log(`
+Product's Name: ${productsName}
+Price: $${price}
+Quantity: ${qty}`)
+
+let subtotal=0;
 let total=0;
 
-function addCart(price){
-    total=total+price;
-    console.log(total);
-    return total;
-
-}
-
-function calculateTaxes(){
-    subtotal=addCart(2);
-    let totalTax= subtotal*1.11;
+function ticket(price){
+    subtotal=price*qty;
+    total=subtotal*1.11;
     document.getElementById("receipt").innerHTML=
-    `<p>Subtotal= ${subtotal}</p>
-    <p>Total= ${totalTax}</p>`;
+    `<h3>Product's Name: ${productsName}</h3>
+    <p>Price: $${price}</p>
+    <p>Quantity: ${qty}</p>
+    <p> Subtotal: $${subtotal}</p>
+    <p> Total: $${total}</p>`;
+    
 }
 
