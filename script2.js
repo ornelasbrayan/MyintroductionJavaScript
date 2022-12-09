@@ -28,11 +28,37 @@ function greeting(){
     // document.write("Hello world");
     return "Brayan";
 }
-
-function sum(){
-    return 10+10;
+//globar variable
+let global;
+function sum(a,b){
+    //local variable
+    global="affected"; 
+    return a+b;
 }
 
-console.log(sum());
+console.log(sum(10,50));
+console.log(global);
 
 // function expression 
+let displayValues= function(){
+    console.log("Display values....");
+}
+displayValues();
+
+// arrow functions 
+
+let traveling = country => "Traveling to ... " + country;
+
+travel = traveling("Italy");
+
+console.log(travel);
+
+let total=0;
+
+function addCart(price){
+    total=total+price;
+    console.log(total)
+    return total;
+
+}
+
